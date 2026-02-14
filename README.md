@@ -36,21 +36,4 @@ Installation
 
 4.  Open in Browser : The application will be available at `http://localhost:5173` (or the port shown in your terminal).
 
-Project Structure
-
-
-expense-tracker/
-├── public/              # Static assets
-├── src/
-│   ├── components/      # React components
-│   │   ├── Dashboard/   # Dashboard & Summary cards
-│   │   ├── ExpenseForm/ # Form inputs for adding/editing
-│   │   ├── ExpenseList/ # List view of expenses
-│   │   ├── Layout/      # Header and main layout wrappers
-│   │   └── UI/          # Reusable UI components (Card, Button)
-│   ├── App.jsx          # Main application logic
-│   ├── main.jsx         # Entry point
-│   └── index.css        # Global styles & variables
-├── index.html           # HTML template
-└── package.json         # Project dependencies and scripts
 
