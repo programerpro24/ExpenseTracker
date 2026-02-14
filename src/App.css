@@ -1,0 +1,29 @@
+.app-container {
+    min-height: 100vh;
+    background-color: var(--bg-color);
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-lg) var(--spacing-md);
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+}
+
+@media (min-width: 900px) {
+    .content-grid {
+        grid-template-columns: 400px 1fr;
+        align-items: start;
+    }
+
+    .form-section {
+        position: sticky;
+        top: 100px;
+        /* Header height + spacing */
+    }
+}

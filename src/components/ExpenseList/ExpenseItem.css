@@ -1,0 +1,116 @@
+.expense-item {
+    list-style: none;
+}
+
+.expense-item-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.expense-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ececec;
+    background-color: #f8f9fa;
+    border-radius: var(--border-radius);
+    padding: var(--spacing-sm);
+    width: 60px;
+    height: 60px;
+    margin-right: var(--spacing-md);
+}
+
+.expense-date .month {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-bold);
+    color: var(--text-secondary);
+    text-transform: uppercase;
+}
+
+.expense-date .day {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--text-main);
+}
+
+.expense-description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.expense-description h3 {
+    margin: 0;
+    font-size: var(--font-size-base);
+    color: var(--text-main);
+}
+
+.expense-description .note {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.expense-amount {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-color);
+    margin-right: var(--spacing-md);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    background-color: rgba(0, 121, 107, 0.05);
+}
+
+.expense-actions {
+    margin-left: var(--spacing-md);
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+@media (max-width: 600px) {
+    .expense-item-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .expense-date {
+        flex-direction: row;
+        width: 100%;
+        justify-content: flex-start;
+        gap: var(--spacing-sm);
+        height: auto;
+        margin-bottom: var(--spacing-md);
+        background: none;
+        border: none;
+        padding: 0;
+    }
+
+    .expense-date .month {
+        font-size: var(--font-size-base);
+    }
+
+    .expense-amount {
+        margin-right: 0;
+        margin-top: var(--spacing-md);
+        margin-bottom: var(--spacing-md);
+        width: 100%;
+        text-align: center;
+    }
+
+    .expense-actions {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .expense-actions button {
+        width: 100%;
+        /* Make buttons full width on mobile */
+        flex: 1;
+    }
+}
